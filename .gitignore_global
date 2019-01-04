@@ -59,3 +59,13 @@ Thumbs.db
 *.xlc
 *.xlsx
 *.csv
+
+# IDE #
+#######
+.idea
+.vscode
+.vscode
+
+test.php
+web/test.js
+cacheTest.php

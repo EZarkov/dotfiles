@@ -4,5 +4,17 @@
     "gulp": "^3.9.0",
     "jslint": "^0.9.6",
     "resume": "^0.4.8"
+  },
+  "name": "Evstati",
+  "version": "0.0.1",
+  "description": "Local packages",
+  "main": "index.js",
+  "repository": "git@github.com:EZarkov/dotfiles.git",
+  "author": "Evstati Zarkov <evstati.zarkov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/prop-types": "^15.5.8",
+    "@types/react": "^16.7.18"
   }
 }

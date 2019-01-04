@@ -141,6 +141,9 @@
 
     # Interactive rebase with the given number of latest commits
     ri = "!r() { git rebase --interactive HEAD~$1; }; r"
+    ric = "!r() { git rebase --interactive $1~1; }; r"
+    cf = "!r() { git commit --fixup=$1; }; r" 
+    cfri = "!r() { git commit --fixup=$1 && git rebase --interactive $1~1; }; r"
 
     # Update all remotes
     ru = remote update
@@ -210,7 +213,7 @@
 
     # Default editor for commit messages and other inputs
     # Even when EDITOR is set to something else
-    editor=vim
+    editor=nano
 
     # Global `.gitignore`
     excludesfile = ~/.gitignore_global
@@ -320,3 +323,6 @@
 
 [include]
     path = .gitconfig.extra
+[user]
+	name = Evstati Zarkov
+	email = evstati.zarkov@gmail.com

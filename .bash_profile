@@ -75,8 +75,10 @@ if command -v rbenv > /dev/null; then
     eval "$(rbenv init -)"
 fi;
 
-# gulp completion
-eval "$(gulp --completion=bash)"
-
 # Symfony console completion
 eval "$(symfony-autocomplete --aliases=c)"
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+export PATH="/usr/local/opt/apr-util/bin:$PATH"
