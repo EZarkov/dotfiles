@@ -131,6 +131,12 @@
     # Shorthand for pull
     pl = pull
 
+    # fetch and pull with rebase
+    pll = !git fetch && git pull -r;
+
+    # Rebase on master with pul
+    plrm = !git fetch && git pull -r origin master;
+
     # Create a new remote branch with the same name and track it.
     # First argument is remote name. Defaults to "origin".
     # Second, third and fourth argument are passed to `git push`.

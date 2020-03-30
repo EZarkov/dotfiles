@@ -1,10 +1,5 @@
 {
-  "devDependencies": {
-    "eslint": "^2.4.0",
-    "gulp": "^3.9.0",
-    "jslint": "^0.9.6",
-    "resume": "^0.4.8"
-  },
+  "devDependencies": {},
   "name": "Evstati",
   "version": "0.0.1",
   "description": "Local packages",
@@ -13,8 +8,10 @@
   "author": "Evstati Zarkov <evstati.zarkov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/jest": "^23.3.10",
-    "@types/prop-types": "^15.5.8",
-    "@types/react": "^16.7.18"
+    "@types/jest": "^24.0.15",
+    "@types/node": "^13.9.5",
+    "@types/react": "^16.8.23",
+    "@types/react-router": "^5.0.3",
+    "@types/yup": "^0.26.22"
   }
 }

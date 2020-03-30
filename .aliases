@@ -31,6 +31,7 @@ alias tl="travis lint"
 alias tm="travis monitor --my-repos --notify growl"
 alias v="vim"
 alias vg="vagrant"
+alias vg-ssh="vagrant ssh -- -R 3306:localhost:3306"
 
 # Enable git command autocompletion for 'g' as well
 complete -o default -o nospace -F _git g

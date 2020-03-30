@@ -68,4 +68,11 @@ Thumbs.db
 
 test.php
 web/test.js
+web/test.html
 cacheTest.php
+scripts/chrome-codeception.sh
+scripts/opcache.sh
+scripts/vagrant.sh
+tests/Codeception/_envs/travis.yml
+codeception-import.yml
+
