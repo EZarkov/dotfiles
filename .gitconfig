@@ -142,13 +142,16 @@
     # Second, third and fourth argument are passed to `git push`.
     publish = "!p() { [ -z \"$1\" ] && remote=\"origin\" || remote=$1; git push --set-upstream $2 $3 $4 $remote HEAD; }; p"
 
+    #Rename local branch and remote branch
+    rename = "!rename() { git branch -m $1 $2; git push origin :$1; git push --set-upstream origin $2; }; rename"
+
     # Shorthand for remote
     r = remote
 
     # Interactive rebase with the given number of latest commits
     ri = "!r() { git rebase --interactive HEAD~$1; }; r"
     ric = "!r() { git rebase --interactive $1~1; }; r"
-    cf = "!r() { git commit --fixup=$1; }; r" 
+    cf = "!r() { git commit --fixup=$1; }; r"
     cfri = "!r() { git commit --fixup=$1 && git rebase --interactive $1~1; }; r"
 
     # Update all remotes
@@ -300,9 +303,9 @@
     autoStash = true
 
 # URL shorthands
-# 
+#
 # See `git help config` and search for "url.<base>"
-# 
+#
 # gh: is a shorthand for git@github.com
 [url "git@github.com:"]
 
@@ -332,3 +335,8 @@
 [user]
 	name = Evstati Zarkov
 	email = evstati.zarkov@gmail.com
+
+[merge "composer_json"]
+	name = composer JSON file merge driver
+	driver = composer-git-merge-driver %O %A %B %L %P
+	recursive = binary

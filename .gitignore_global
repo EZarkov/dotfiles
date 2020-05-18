@@ -74,5 +74,6 @@ scripts/chrome-codeception.sh
 scripts/opcache.sh
 scripts/vagrant.sh
 tests/Codeception/_envs/travis.yml
+tests/var/*
 codeception-import.yml
 
