@@ -128,6 +128,9 @@
     # Shorthand for push
     p = push
 
+    # Shorthand for push force with lease
+    pf = push --force-with-lease
+
     # Shorthand for pull
     pl = pull
 
@@ -340,3 +343,5 @@
 	name = composer JSON file merge driver
 	driver = composer-git-merge-driver %O %A %B %L %P
 	recursive = binary
+[pull]
+	rebase = true

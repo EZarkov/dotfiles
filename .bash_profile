@@ -1,7 +1,7 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-
-
+export PATH="/usr/local/bin:$PATH"
 
 
 
@@ -86,8 +86,11 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 export PATH="/usr/local/opt/apr-util/bin:$PATH"
-export PATH="/usr/local/Cellar/php@7.1/7.1.32/bin:$PATH"
+export PATH="/usr/local/Cellar/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH=$PATH:/usr/local/opt/rabbitmq/sbin
+export Path=/usr/local/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/Cellar/php@7.4/bin:/usr/local/opt/apr-util/bin:/Users/evstati/.rbenv/bin:/Users/evstati/node_modules/bin:/bin:/sbin:/usr/local/opt/coreutils/libexec/gnubin:/Users/evstati/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/Cellar/php@7.4/bin:/usr/local/opt/apr-util/bin:/Users/evstati/.rbenv/bin:/Users/evstati/node_modules/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/evstati/bin:/Users/evstati/.composer/vendor/bin:/usr/local/opt/rabbitmq/sbin:/Users/evstati/.composer/vendor/bin:/usr/local/opt/rabbitmq/sbin
+export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"

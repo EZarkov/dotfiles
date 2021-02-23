@@ -64,7 +64,7 @@ Thumbs.db
 #######
 .idea
 .vscode
-.vscode
+
 
 test.php
 web/test.js

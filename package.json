@@ -7,10 +7,13 @@
   "author": "Evstati Zarkov <evstati.zarkov@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/dexie-batch": "^0.4.1",
     "@types/jest": "^24.0.15",
     "@types/node": "^14.0.1",
+    "@types/prop-types": "^15.7.3",
     "@types/react": "^16.8.23",
     "@types/react-router": "^5.0.3",
+    "@types/react-router-dom": "^5.1.5",
     "@types/yup": "^0.26.22"
   }
 }
